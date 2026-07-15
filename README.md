@@ -1,8 +1,8 @@
-# YueEx — Bộ Công Cụ Thử Nghiệm & Phát Triển Luau Cao Cấp (Bypass EDR/Anti-Cheat)
+# YueEx — (Bypass EDR/Anti-Cheat)
 
-**YueEx** là một công cụ phát triển và kiểm thử nội bộ dành cho ứng dụng **MyApp**, được thiết kế để nạp mã nguồn Luau trực tiếp vào tiến trình runtime của MyApp mà không thông qua loader chuẩn của hệ thống. Dự án kết hợp hiệu năng vượt trội và tính năng can thiệp cấp hệ thống của **Rust** với giao diện trực quan của **C# WPF**.
+**YueEx** là một công cụ phát triển và kiểm thử nội bộ dành cho ứng dụng **Roblox**, được thiết kế để nạp mã nguồn Luau trực tiếp vào tiến trình runtime của Roblox mà không thông qua loader chuẩn của hệ thống. Dự án kết hợp hiệu năng vượt trội và tính năng can thiệp cấp hệ thống của **Rust** với giao diện trực quan của **C# WPF**.
 
-Dự án này sử dụng các kỹ thuật bypass nâng cao cấp độ Ring 3 (User-mode) nhằm vượt qua các cơ chế kiểm tra bộ nhớ, luồng và tải mô-đun của các hệ thống EDR / Anti-Cheat hiện đại (ví dụ: Byfron/Hyperion).
+Dự án này sử dụng các kỹ thuật bypass nâng cao cấp độ Ring 3 (User-mode) nhằm vượt qua các cơ chế kiểm tra bộ nhớ, luồng và tải mô-đun của các hệ thống EDR / Anti-Cheat hiện đại (ví dụ: Hyperion).
 
 ---
 
@@ -11,10 +11,10 @@ Dự án này sử dụng các kỹ thuật bypass nâng cao cấp độ Ring 3 
 Dự án bao gồm hai thành phần chính:
 1. **`YueEx.exe` (Out-of-process - Bộ điều khiển & Giao diện)**:
    - Được viết bằng **C# WPF** kết hợp với engine lõi bằng **Rust** (`yueex_engine.dll`).
-   - Nhiệm vụ: Tìm kiếm/lựa chọn tiến trình `MyApp.exe`, thực hiện nạp thủ công (Manual Mapping) `YueEx.dll`, cung cấp trình soạn thảo script Luau và nhận telemetry/kết quả thực thi trả về.
+   - Nhiệm vụ: Tìm kiếm/lựa chọn tiến trình `RobloxPlayerBeta.exe`, thực hiện nạp thủ công (Manual Mapping) `YueEx.dll`, cung cấp trình soạn thảo script Luau và nhận telemetry/kết quả thực thi trả về.
 2. **`YueEx.dll` (In-process - Trình chạy nội bộ)**:
    - Được phát triển hoàn toàn bằng **Rust** (`yueex-dll`).
-   - Nhiệm vụ: Chạy ngầm trong không gian bộ nhớ của `MyApp.exe`, giao tiếp qua kênh IPC siêu ẩn, liên kết với Task Scheduler của Luau VM và thực thi script an toàn.
+   - Nhiệm vụ: Chạy ngầm trong không gian bộ nhớ của `RobloxPlayerBeta.exe`, giao tiếp qua kênh IPC siêu ẩn, liên kết với Task Scheduler của Luau VM và thực thi script an toàn.
 
 ```text
 YueEx.exe (WPF UI)
@@ -23,7 +23,7 @@ YueEx.exe (WPF UI)
    │     │
    │     ├─► Manual Mapping (Module Overloading để đạt MEM_IMAGE)
    │     │     │
-   │     │     └─► Nạp YueEx.dll vào MyApp.exe
+   │     │     └─► Nạp YueEx.dll vào RobloxPlayerBeta.exe
    │     │
    │     └─► Thiết lập IPC ẩn danh (Shared Memory + Named Events)
    │           ▲
