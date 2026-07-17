@@ -10,10 +10,10 @@ Dự án này sử dụng các kỹ thuật bypass nâng cao cấp độ Ring 3 
 Dự án bao gồm hai thành phần chính:
 1. **`YueEx.exe` (Out-of-process - Bộ điều khiển & Giao diện)**:
    - Được viết bằng **C# WPF** kết hợp với engine lõi bằng **Rust** (`yueex_engine.dll`).
-   - Nhiệm vụ: Tìm kiếm/lựa chọn tiến trình `RobloxPlayerBeta.exe`, thực hiện nạp thủ công (Manual Mapping) `YueEx.dll`, cung cấp trình soạn thảo script Luau và nhận telemetry/kết quả thực thi trả về.
+   - Nhiệm vụ: Tìm kiếm/lựa chọn tiến trình `RobloxPlayerBeta.exe`, thực hiện Manual Mapping `YueEx.dll`, cung cấp trình soạn thảo script Luau và nhận telemetry/kết quả thực thi trả về.
 2. **`YueEx.dll` (In-process - Trình chạy nội bộ)**:
    - Được phát triển hoàn toàn bằng **Rust** (`yueex-dll`).
-   - Nhiệm vụ: Chạy ngầm trong không gian bộ nhớ của `RobloxPlayerBeta.exe`, giao tiếp qua kênh IPC siêu ẩn, liên kết với Task Scheduler của Luau VM và thực thi script an toàn.
+   - Nhiệm vụ: Chạy ngầm trong không gian bộ nhớ của `RobloxPlayerBeta.exe`, giao tiếp qua kênh IPC ẩn, liên kết với Task Scheduler của Luau VM và thực thi script an toàn.
 
 ```text
 YueEx.Dashboard.Gui (WPF UI) / cli-injector
@@ -118,7 +118,8 @@ Dự án yêu cầu cài đặt **Rust toolchain** (mục tiêu `x86_64-pc-windo
 3. **Biên dịch và chạy Giao diện Dashboard (WPF)**:
    - Vào thư mục `frontend/YueEx.Dashboard.Gui`
    - `dotnet build` và chạy ứng dụng Dashboard UI.
-
+  
+`toi yeu claudecode + codex + cursor + antigravity + deepseek + chatgpt + gemini + copilot + claude + GLM + QWen`
 ---
 
 ## ⚠️ Khước Từ Trách Nhiệm (Disclaimer)
