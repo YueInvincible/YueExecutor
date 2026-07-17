@@ -1,10 +1,6 @@
 # YueEx — (Bypass EDR/Anti-Cheat)
-
-<<<<<<< HEAD
-**YueEx** là một công cụ phát triển và kiểm thử nội bộ dành cho ứng dụng **RobloxPlayerBeta**, được thiết kế để nạp mã nguồn Luau trực tiếp vào tiến trình runtime của RobloxPlayerBeta mà không thông qua loader chuẩn của hệ thống. Dự án kết hợp hiệu năng vượt trội và tính năng can thiệp cấp hệ thống của **Rust** với giao diện trực quan của **C# WPF**.
 =======
 **YueEx** là một công cụ phát triển và kiểm thử nội bộ dành cho ứng dụng **Roblox**, được thiết kế để nạp mã nguồn Luau trực tiếp vào tiến trình runtime của Roblox mà không thông qua loader chuẩn của hệ thống. Dự án kết hợp hiệu năng vượt trội và tính năng can thiệp cấp hệ thống của **Rust** với giao diện trực quan của **C# WPF**.
->>>>>>> b0049476a00cc8fe85730610664f60e73cd0100d
 
 Dự án này sử dụng các kỹ thuật bypass nâng cao cấp độ Ring 3 (User-mode) nhằm vượt qua các cơ chế kiểm tra bộ nhớ, luồng và tải mô-đun của các hệ thống EDR / Anti-Cheat hiện đại (ví dụ: Hyperion).
 
