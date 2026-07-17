@@ -117,8 +117,7 @@ Dự án yêu cầu cài đặt **Rust toolchain** (mục tiêu `x86_64-pc-windo
 
 3. **Biên dịch và chạy Giao diện Dashboard (WPF)**:
    - Vào thư mục `frontend/YueEx.Dashboard.Gui`
-   - `dotnet build` và chạy ứng dụng Dashboard UI.
-  
+   - `dotnet build` và chạy ứng dụng Dashboard UI.  
 `toi yeu claudecode + codex + cursor + antigravity + deepseek + chatgpt + gemini + copilot + claude + GLM + QWen`
 ---
 
