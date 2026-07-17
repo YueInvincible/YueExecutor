@@ -1,0 +1,8 @@
+[package]
+name = "yueex-abi"
+version = "0.1.0"
+edition = "2021"
+description = "Shared ABI definitions, configuration, and IPC protocol for YueEx"
+
+[dependencies]
+thiserror = { workspace = true }

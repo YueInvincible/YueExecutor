@@ -1,0 +1,85 @@
+# ==============================================================================
+# YueEx Project .gitignore
+# ==============================================================================
+
+# ─── 1. BÍ MẬT & THÔNG TIN QUAN TRỌNG (Secrets & Credentials) ──────────────────
+# Không bao giờ commit key, token, cấu hình môi trường hoặc file chứng chỉ lên GitHub
+.env
+.env.*
+!.env.example
+secrets.json
+credentials.json
+*.pem
+*.key
+*.pub
+*.cert
+*.pfx
+*.p12
+*.token
+*.asc
+*.gpg
+
+# ─── 2. CÁC TỆP BUILD RUST (Rust / Cargo) ────────────────────────────────────
+# Bỏ qua thư mục target chứa các file nhị phân compiled (.exe, .dll, .pdb, v.v.)
+/target/
+**/*.rs.bk
+Cargo.lock
+
+# ─── 3. CÁC TỆP BUILD C# WPF / VISUAL STUDIO (.NET) ──────────────────────────
+# Bỏ qua các thư mục build đầu ra và file tạm của WPF
+[Bb]in/
+[Oo]bj/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.ipch
+MonoAndroid/
+MonoTouch/
+x64/
+x86/
+Release/
+Debug/
+
+# ─── 4. FRONTEND / DASHBOARD (Node.js nếu có) ────────────────────────────────
+# Bỏ qua thư mục node_modules và build outputs của frontend
+node_modules/
+/frontend/**/dist/
+/frontend/**/.next/
+/frontend/**/out/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ─── 5. FILE LOG & TỆP TẠM HỆ THỐNG (Logs & System Temp Files) ───────────────
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ─── 6. BỘ DUMP & CÁC FILE NHỊ PHÂN KHÁC (Binaries & Prebuilt Tools) ────────
+# Mặc định bỏ qua các file thực thi tự build
+*.exe
+*.dll
+*.pdb
+*.sys
+*.lib
+*.so
+*.dylib
+
+# NGOẠI LỆ: Giữ lại các công cụ dumper / thư viện đi kèm trong thư mục Dumper
+!/Dumper/*.exe
+!/Dumper/*.dll
+!/Dumper/*.bat
+!/Dumper/*.ps1
+!/Dumper/*.zip

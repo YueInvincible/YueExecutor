@@ -1,0 +1,8 @@
+[package]
+name = "yueex-pe"
+version = "0.1.0"
+edition = "2021"
+description = "Zero-dependency PE (Portable Executable) parser for YueEx Manual Mapping"
+
+[dependencies]
+thiserror = { workspace = true }

@@ -1,0 +1,40 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/yueex-abi",
+    "crates/yueex-pe",
+    "crates/yueex-injector",
+    "crates/yueex-ipc",
+    "crates/yueex-engine",
+    "crates/yueex-dll", "crates/cli-injector",
+    "crates/yueex-stealth",
+    "crates/mock-host"
+]
+
+[workspace.dependencies]
+# Windows API bindings
+windows = { version = "0.58", features = [
+    "Win32_Foundation",
+    "Win32_System_Threading",
+    "Win32_System_Memory",
+    "Win32_System_Diagnostics_Debug",
+    "Win32_System_Diagnostics_ToolHelp",
+    "Win32_System_LibraryLoader",
+    "Win32_System_ProcessStatus",
+    "Win32_Security",
+    "Win32_System_Kernel",
+    "Win32_System_SystemInformation",
+    "Win32_Networking_WinHttp",
+] }
+
+# Error handling
+thiserror = "2"
+
+# Logging
+tracing = "0.1"
+
+# Internal crates
+yueex-abi = { path = "crates/yueex-abi" }
+yueex-pe = { path = "crates/yueex-pe" }
+yueex-injector = { path = "crates/yueex-injector" }
+yueex-ipc = { path = "crates/yueex-ipc" }

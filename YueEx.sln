@@ -1,0 +1,25 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YueEx.Dashboard", "frontend\YueEx.Dashboard\YueEx.Dashboard.csproj", "{8D3F6E93-B82E-4208-9D29-F7E54F4DADEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YueEx.Dashboard.Gui", "frontend\YueEx.Dashboard.Gui\YueEx.Dashboard.Gui.csproj", "{68B89A4B-BF30-4D48-A596-BC3B214CF625}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D3F6E93-B82E-4208-9D29-F7E54F4DADEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D3F6E93-B82E-4208-9D29-F7E54F4DADEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D3F6E93-B82E-4208-9D29-F7E54F4DADEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D3F6E93-B82E-4208-9D29-F7E54F4DADEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68B89A4B-BF30-4D48-A596-BC3B214CF625}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68B89A4B-BF30-4D48-A596-BC3B214CF625}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68B89A4B-BF30-4D48-A596-BC3B214CF625}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68B89A4B-BF30-4D48-A596-BC3B214CF625}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

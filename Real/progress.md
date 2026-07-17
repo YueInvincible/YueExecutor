@@ -1,0 +1,111 @@
+- **Last Updated:** 2026-07-16T20:42:30+07:00
+LAST PROGRESS: line 64400 in Real_decrypted.dll_full.c
+- **Completed Functions:** 
+  - FUN_180001050 -> register_init_callback_1 -> init.rs
+  - FUN_180002990 -> init_module_handle -> init.rs
+  - FUN_180001200 -> init_crypto_integer_0 -> crypto.rs
+  - FUN_180001270 -> init_crypto_integer_1 -> crypto.rs
+  - FUN_1800012f0 -> init_crypto_integer_2 -> crypto.rs
+  - FUN_1800020b0 -> mark_luau_export_value_syntax -> luau.rs
+  - FUN_180001060 -> register_init_callback_2 -> init.rs
+  - FUN_1800010b0 -> alloc_and_init_array -> init.rs
+  - FUN_180002280 -> register_luau_math_metamethods -> luau.rs
+  - FUN_180002620 -> register_luau_core_metamethods -> luau.rs
+  - FUN_180003090, FUN_1800030d0, FUN_180003110 -> init_struct_1, 2, 3 -> init.rs
+  - FUN_180003160, FUN_1800031f0, FUN_1800032c0 -> init_struct_4 (and similar) -> init.rs
+  - FUN_1800033f0 -> init_cpu_features -> system.rs
+  - FUN_180003670 -> mark_luau_direct_field_get -> luau.rs
+  - FUN_1800037d0 -> init_drawing_lib -> environment.rs
+  - FUN_1800038f0 -> init_base64_crypt_env -> environment.rs
+  - FUN_180003960, FUN_180003980 -> register_env_callback_1, 2 -> environment.rs
+  - FUN_1800039a0 -> init_environment_apis -> environment.rs
+  - FUN_1800086a0 -> init_base_n_encoder -> crypto.rs
+  - FUN_180008610 -> init_source_template_string_store -> crypto.rs
+  - FUN_180008720 -> secure_clear_memory -> crypto.rs
+  - FUN_1800084c0 -> init_string_source -> crypto.rs
+  - FUN_1800087a0 -> init_base_n_decoder -> crypto.rs
+  - FUN_180008920 -> secure_clear_memory_2 -> crypto.rs
+  - FUN_1800088e0 -> clear_memory_and_free -> crypto.rs
+  - FUN_180008990 -> init_grouper -> crypto.rs
+  - FUN_180008ad0 -> init_base64_encoder -> crypto.rs
+  - FUN_180008c40 -> init_hex_encoder -> crypto.rs
+  - FUN_180008f70 -> base64_encode_string -> crypto.rs
+  - FUN_180009060 -> base64_decode_string -> crypto.rs
+  - FUN_180009170 -> sha256_hex_hash_string -> crypto.rs
+  - FUN_1800094c0 -> sha384_hex_hash_string -> crypto.rs
+  - FUN_1800096e0 -> init_sha384 -> crypto.rs
+  - FUN_180009c50 -> init_sha256_state -> crypto.rs
+  - FUN_180009ec0 -> init_string_store -> crypto.rs
+  - FUN_18000a030 -> string_store_append -> crypto.rs
+  - FUN_18000f8c0 -> crc32_update -> crypto.rs
+  - FUN_18000f970 -> crc32_truncated_final -> crypto.rs
+  - FUN_180047040 -> parse_ast_expr_binary_op -> luau.rs
+  - FUN_180047190 -> check_c_style_binary_op_error -> luau.rs
+  - FUN_180047340 -> parse_ast_expr_binary_or_unary -> luau.rs
+  - FUN_1800477e0 -> parse_ast_expr_local_or_global -> luau.rs
+  - FUN_180047aa0 -> parse_ast_expr_primary -> luau.rs
+  - FUN_180047cb0 -> parse_ast_expr_prefix -> luau.rs
+  - FUN_180047f60 -> parse_ast_expr_index_expr -> luau.rs
+  - FUN_180048150 -> parse_ast_expr_method_call -> luau.rs
+  - FUN_1800485b0 -> parse_ast_expr_type_assertion -> luau.rs
+  - FUN_1800487c0 -> parse_numeric_literal_to_double -> luau.rs
+  - FUN_180048900 -> parse_ast_expr_function_literal -> luau.rs
+  - FUN_180048a80 -> parse_ast_expr_terminal -> luau.rs
+  - FUN_180048ea0 -> parse_ast_expr_list -> luau.rs
+  - FUN_180049240 -> parse_ast_expr_call -> luau.rs
+  - FUN_180049a90 -> parse_ast_expr_call_error -> luau.rs
+  - FUN_180049b80 -> report_ambiguous_call_syntax -> luau.rs
+  - FUN_180049ba0 -> parse_ast_expr_table -> luau.rs
+  - FUN_18004a540 -> parse_ast_expr_if_else -> luau.rs
+  - FUN_18004a830 -> parse_ast_generic_parameters -> luau.rs
+  - FUN_18004b550 -> parse_ast_type_group -> luau.rs
+  - FUN_18004bb00 -> parse_and_unescape_string -> luau.rs
+  - FUN_18004bd80 -> parse_ast_expr_constant_string -> luau.rs
+  - FUN_18004c000 -> parse_ast_expr_interpolated_string -> luau.rs
+  - FUN_18004cbb0 -> parse_ast_expr_instantiate -> luau.rs
+  - FUN_18004cf50 -> parse_ast_expr_number -> luau.rs
+  - FUN_18004d900 -> register_local -> luau.rs
+  - FUN_18004da30 -> pop_local -> luau.rs
+  - FUN_18004db00 -> expect_and_consume -> luau.rs
+  - FUN_18004db50 -> report_expected_token_error -> luau.rs
+  - FUN_18004dc50 -> match_token -> luau.rs
+  - FUN_18004dd10 -> report_match_error -> luau.rs
+  - FUN_18004dec0 -> expect_match_end -> luau.rs
+  - FUN_18004df20 -> report_missing_close_error -> luau.rs
+  - FUN_18004e050 -> report_error_core -> luau.rs
+  - FUN_18004e200 -> report_error -> luau.rs
+  - FUN_18004e220 -> report_expected_identifier_error -> luau.rs
+  - FUN_18004e2b0 -> create_ast_stat_error -> luau.rs
+  - FUN_18004e3b0 -> create_ast_expr_error -> luau.rs
+  - FUN_18004e4a0 -> create_ast_type_error -> luau.rs
+  - FUN_18004e680 -> lexer_next_token -> luau.rs
+  - FUN_18004e940 -> create_ast_stat_break -> luau.rs
+  - FUN_18004e9f0 -> create_ast_stat_continue -> luau.rs
+  - FUN_18004eaa0 -> copy_ast_array -> luau.rs
+  - FUN_18004ebc0 -> alloc_and_copy -> luau.rs
+  - FUN_18004ede0 -> create_ast_type_pack_explicit -> luau.rs
+  - FUN_18004eea0 -> create_ast_type_reference -> luau.rs
+  - FUN_18004f250 -> vector_free -> luau.rs
+  - FUN_18004f2c0 -> linked_list_free -> luau.rs
+- **Progress in `Real_decrypted.dll_full.c`**: ~64400 / 376084 lines
+- **Recently Translated**:
+  - Filter Helpers (`FilterPutSpaceHelper`, `OutputProxy`)
+  - Filter Implementations (`StreamTransformationFilter`, `HashFilter`, `FilterWithBufferedInput`)
+  - Full `StreamTransformationFilter` with dynamic RTTI casting simulated
+  - MessageQueue and ByteQueue object destructors / resource management (lines 19000-19500)
+- **Pending/Incomplete:** 
+  - (Scanned past CryptoPP unrolled BigInt math loops spanning lines 19600-45000)
+  - Next major target: `RealVM` Luau AST Parser starting at line 45515 (`RealVM::ParseError`, `RealVM::AstExprCall`).
+  - Added AST parser exception/init helpers (`init_parse_error`, `destroy_parse_error`, `destroy_parser`).
+  - Added AST parser node creation logic (`parse_ast_stat_block`, etc.) and expression parsing logic (unary, binary, local/global variables, primary, index expressions, method calls, type assertions, literals, function literals, lists, function calls, table literals, if-else expressions, generic parameters, type groups, constant strings, interpolated strings, generic instantiations, complex numeric literals).
+  - Translated a large swath of AST error handling, local variable tracking, and token matching/assertion logic (e.g., `report_match_error`, `expect_and_consume`, `create_ast_stat_error`).
+  - Identified the main lexer tokenizer (`lexer_next_token`), basic flow control AST nodes (`AstStatBreak`, `AstStatContinue`), and memory reallocation helpers for lists/vectors (`copy_ast_array`, `vector_free`).
+  - Scanned AST parsing logic up to line 64400.
+- **Global Variables/Structs Mapped:** 
+  - DAT_1802b34a0 (HMODULE handle)
+  - DAT_1802b30f0, DAT_1802b30e8 (Luau linked lists)
+  - DAT_1802b0a70, DAT_1802b0ab0 (Luau metamethod array pointers)
+  - _DAT_1802a5498, _DAT_1802a54c0, _DAT_1802a55e0 (CPU-feature specific function pointers)
+  - _DAT_1802b0af0, uRam00000001802b0af8, _DAT_1802b0b00, _DAT_1802b0b08 (DrawingLib environment globals)
+  - _DAT_1802b0b20, _DAT_1802b0b28, _DAT_1802b0b10 (Base64/Crypt environment pointers)
+- **Handoff Notes:** Created `environment.rs`. Translated the `DrawingLib` embedded script injection, mimicking the exact `malloc/free/abort` logic to safely unpack the Luau scripts. Also translated the Base64/crypt globals memory copying logic precisely. The next major hurdle is `FUN_1800039a0`, a gigantic function that uses `alloca_probe` to aggressively allocate stack space for what appears to be massive strings/arrays of environment settings. AST expression parsing is essentially complete! We have finished generic instantiations (`func<T>`) and advanced numeric literals (hex/binary with 'i' suffixes) up to line 62800. The batch up to 64400 revealed the main lexer routine `lexer_next_token`, memory reallocation tools for building arbitrary length lists of statements/types, and the actual implementations of `AstStatBreak`, `AstStatContinue`, and various Type Packs (`AstTypePackExplicit`, `AstTypeReference`). We are now firmly in statement and type definition parsing.

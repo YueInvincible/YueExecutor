@@ -1,0 +1,15 @@
+[package]
+name = "yueex-engine"
+version = "0.1.0"
+edition = "2021"
+description = "C ABI bridge for YueEx — exported to C# WPF via P/Invoke"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+yueex-abi = { workspace = true }
+yueex-injector = { workspace = true }
+yueex-ipc = { workspace = true }
+windows = { workspace = true }
+tracing = { workspace = true }

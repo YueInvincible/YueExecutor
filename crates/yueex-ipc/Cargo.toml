@@ -1,0 +1,11 @@
+[package]
+name = "yueex-ipc"
+version = "0.1.0"
+edition = "2021"
+description = "Shared Memory + Named Event IPC implementation for YueEx"
+
+[dependencies]
+yueex-abi = { workspace = true }
+windows = { workspace = true, features = ["Win32_System_Memory", "Win32_System_Threading"] }
+thiserror = { workspace = true }
+tracing = { workspace = true }

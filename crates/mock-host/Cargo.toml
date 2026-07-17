@@ -1,0 +1,10 @@
+[package]
+name = "mock-host"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+path = "src/test_runner.rs"
+
+[dependencies]
+serde_json = "1.0"

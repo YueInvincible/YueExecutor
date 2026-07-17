@@ -1,0 +1,20 @@
+[package]
+name = "yueex-dll"
+version = "0.1.0"
+edition = "2021"
+description = "YueEx in-process runtime — injected into MyApp"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+yueex-abi = { workspace = true }
+yueex-ipc = { workspace = true }
+yueex-pe = { workspace = true }
+windows = { workspace = true, features = ["Win32_System_SystemServices", "Win32_System_Memory", "Win32_System_LibraryLoader", "Win32_System_Threading"] }
+tracing = { workspace = true }
+tracing-subscriber = "0.3"
+tracing-appender = "0.2"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.150"
+yueex-stealth = { path = "../yueex-stealth" }
